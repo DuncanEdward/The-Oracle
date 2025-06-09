@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: luna-lira
+    env: python
+    plan: free
+    buildCommand: poetry install
+    startCommand: ./start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.17
